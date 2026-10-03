@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#180e2b">
+<title>For Baby 💜</title>
+<style>
+:root{--bg:#180e2b;--panel:#29183e;--panel2:#392052;--pink:#e9c5ff;--text:#f9edff;--muted:#dfc9ee;--line:#8654a7}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at top,#392052 0%,var(--bg) 65%);color:var(--text);font-family:Georgia,serif;text-align:center;overflow-x:hidden}
+button{font:inherit}
+#decorations{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.float{position:absolute;bottom:-50px;opacity:.65;animation:floatUp 10s linear forwards}
+@keyframes floatUp{to{transform:translateY(-110vh) rotate(30deg);opacity:0}}
+header,main,footer{position:relative;z-index:1}
+header{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px;background:radial-gradient(ellipse at center,#392052 0%,#180e2b 70%)}
+.eyebrow{color:#d8b4fe;letter-spacing:.18em;text-transform:uppercase;font: .75rem system-ui,sans-serif}
+h1{font-size:clamp(2.8rem,9vw,5.5rem);line-height:1.05;color:#f2d6ff;text-shadow:0 0 25px #c084fc;margin:18px 0}
+h2{color:var(--pink);font-size:clamp(1.7rem,5vw,2.4rem);font-weight:normal}
+p{color:var(--muted);line-height:1.8}
+.subtitle{font-size:1.2rem;max-width:550px;margin:0 auto 30px}
+section{padding:75px 20px;scroll-margin-top:20px}
+.content{max-width:850px;margin:auto}
+.button{display:inline-block;padding:13px 26px;border-radius:30px;border:1px solid #d8a7ff;background:#512b72;color:white;font-size:1rem;cursor:pointer;transition:.25s}
+.button:hover{background:#74429a;transform:translateY(-2px);box-shadow:0 0 25px #c084fc44}
+.letter{background:linear-gradient(145deg,#301e45,#241632);padding:clamp(22px,5vw,38px);border:1px solid var(--line);border-radius:20px;box-shadow:0 0 30px #a855f722;text-align:left}
+.letter p{font-size:1.08rem}
+.signature{color:#e9baff;font-style:italic;text-align:right}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:18px;margin-top:35px}
+.card{padding:24px 18px;border:1px solid #81549d;border-radius:20px;background:#2b1b40;color:white;cursor:pointer;transition:.25s;min-height:175px}
+.card:hover{transform:translateY(-5px);background:#402354;box-shadow:0 0 25px #c084fc44}
+.card .emoji{font-size:2.6rem}
+.card h3{color:var(--pink);font-size:1.12rem}
+.card p{font-size:.9rem;margin-bottom:0}
+#popup{position:fixed;inset:0;z-index:5;display:none;align-items:center;justify-content:center;padding:20px;background:#0c0615dd}
+#popup.show{display:flex}
+.popup-content{background:#392052;border:1px solid #c084fc;border-radius:22px;padding:30px;max-width:450px;width:100%;box-shadow:0 0 45px #a855f755}
+#popup-emoji{font-size:3rem}
+.music-box,.secret-box{background:#29183e;border:1px solid var(--line);padding:25px;border-radius:20px;max-width:600px;margin:30px auto}
+.player-wrap{width:100%;max-width:480px;margin:18px auto 0;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:#170d25}
+#player{width:100%;height:100%}
+.music-controls{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:16px}
+.volume-label{font: .85rem system-ui,sans-serif;color:var(--muted)}
+input[type=range]{accent-color:#d8a7ff;width:130px}
+#secret-message{display:none;font-size:1.15rem;color:#f5d9ff;margin-top:25px}
+#secret-message.show{display:block;animation:reveal .45s ease}
+@keyframes reveal{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+footer{padding:30px 15px;color:#bca5cf;font: .85rem system-ui,sans-serif}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<div id="decorations" aria-hidden="true"></div>
+
+<header>
+  <p class="eyebrow">✦ A little universe made for us ✦</p>
+  <h1>Hey, Baby 💜</h1>
+  <p class="subtitle">I made something special for you. A tiny corner of the internet that belongs to us. 🐸♡</p>
+  <button class="button" id="enter">Open your little surprise 💌</button>
+  <p style="font-size:2rem;margin-top:35px">🐸 💜 🐸</p>
+</header>
+
+<main>
+<section id="letter">
+  <div class="content">
+    <h2>A letter for my favorite girl 💌</h2>
+    <div class="letter">
+      <p>Hi, Baby. 💜</p>
+      <p>If I could choose one person to spend my days laughing with, being silly with, and making memories with, I would choose you every single time.</p>
+      <p>You make my world a little brighter, my days a little better, and even the most random moments feel special.</p>
+      <p>I love our weird conversations, our ridiculous jokes, and all the little things that make us US.</p>
+      <p>Thank you for being my favorite person and for making this little universe feel like home.</p>
+      <p>Happy anniversary, my love. Here's to us and all the adventures still waiting for us. 💜</p>
+      <p class="signature">Forever yours ♡</p>
+    </div>
+  </div>
+</section>
+
+<section id="jokes">
+  <div class="content">
+    <h2>The museum of our nonsense 🐸</h2>
+    <p>Click these cards, Baby. You know exactly what this means. 😭</p>
+    <div class="cards">
+      <button class="card" data-emoji="🌙" data-title="why are you awake" data-message="A question asked at an hour when neither of us should be conscious. The answer is probably: because we have absolutely no sleep schedule.">
+        <div class="emoji">🌙</div><h3>why are you awake</h3><p>Midnight mysteries</p>
+      </button>
+      <button class="card" data-emoji="🌈" data-title="to muito gay" data-message="A scientific description of us being ridiculously in love. Peer-reviewed by absolutely nobody.">
+        <div class="emoji">🌈</div><h3>to muito gay</h3><p>Our official slogan</p>
+      </button>
+      <button class="card" data-emoji="🫡" data-title="im ovulating i dont care" data-message="The official motto of making a decision and refusing to accept criticism. A truly historic moment in our relationship.">
+        <div class="emoji">🫡</div><h3>im ovulating i dont care</h3><p>No further questions</p>
+      </button>
+      <button class="card" data-emoji="🐸" data-title="Us, probably" data-message="Two silly little frogs, sharing one brain cell, and somehow making it work. Wouldn't trade this for anything.">
+        <div class="emoji">🐸</div><h3>Us, probably</h3><p>Two silly little frogs</p>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section id="music">
+  <div class="content">
+    <h2>Our little soundtrack 🎵</h2>
+    <p>A little Hyrule magic for my favorite Zelda girl. 💜</p>
+    <div class="music-box">
+      <div style="font-size:2.5rem">🎼</div>
+      <h3>Our Zelda song</h3>
+      <p style="font-size:.9rem">A little background music for our little universe. Press play when you're ready. 💜</p>
+      <audio id="background-music" src="song.mp3" loop preload="auto"></audio>
+      <div class="music-controls">
+        <button class="button" id="music-toggle" type="button">Play music ♫</button>
+        <label class="volume-label" for="volume">Volume</label>
+        <input id="volume" type="range" min="0" max="100" value="20" aria-label="Music volume">
+        <span id="volume-number" class="volume-label">20%</span>
+      </div>
+      <p id="music-status" style="font-size:.8rem;margin-bottom:0">Add your music file as song.mp3 beside index.html.</p>
+    </div>
+  </div>
+</section>
+
+<section id="secret">
+  <div class="content">
+    <div class="secret-box">
+      <h2>One last surprise 🎁</h2>
+      <p>Psst... Baby, there's something hidden here.</p>
+      <button class="button" id="secret-button">Open your surprise 💜</button>
+      <p id="secret-message">Out of all the people in this world, I would still find my way to you. You're my favorite hello, my favorite chaos, and my favorite person. I love you, Baby. 💜🐸</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>Made with love, frogs, and an unreasonable amount of affection. 💜🐸</footer>
+
+<div id="popup" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+  <div class="popup-content">
+    <div id="popup-emoji">💜</div>
+    <h2 id="popup-title">A little joke</h2>
+    <p id="popup-text"></p>
+    <button class="button" id="close-popup">Close ♡</button>
+  </div>
+</div>
+
+<script>
+// Floating hearts and frogs
+const decorations=document.getElementById("decorations");
+const symbols=["💜","♡","🐸","💕","✦"];
+function createDecoration(){
+  const item=document.createElement("span");
+  item.className="float";
+  item.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+  item.style.left=Math.random()*100+"%";
+  item.style.fontSize=(15+Math.random()*20)+"px";
+  item.style.animationDuration=(7+Math.random()*6)+"s";
+  decorations.appendChild(item);
+  setTimeout(()=>item.remove(),14000);
+}
+setInterval(createDecoration,850);
+
+// Opening button
+document.getElementById("enter").addEventListener("click",()=>{
+  document.getElementById("letter").scrollIntoView({behavior:"smooth"});
+});
+
+// Joke-card popups
+const popup=document.getElementById("popup");
+document.querySelectorAll(".card").forEach(card=>{
+  card.addEventListener("click",()=>{
+    document.getElementById("popup-emoji").textContent=card.dataset.emoji;
+    document.getElementById("popup-title").textContent=card.dataset.title;
+    document.getElementById("popup-text").textContent=card.dataset.message;
+    popup.classList.add("show");
+    document.getElementById("close-popup").focus();
+  });
+});
+function closePopup(){popup.classList.remove("show")}
+document.getElementById("close-popup").addEventListener("click",closePopup);
+popup.addEventListener("click",e=>{if(e.target===popup)closePopup()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closePopup()});
+
+// Secret message
+document.getElementById("secret-button").addEventListener("click",()=>{
+  const msg=document.getElementById("secret-message");
+  msg.classList.toggle("show");
+  document.getElementById("secret-button").textContent=
+    msg.classList.contains("show")?"One more hug 🐸💜":"Open your surprise 💜";
+});
+
+// Audio-only background music.
+// Upload an audio file named song.mp3 beside index.html.
+const audio = document.getElementById("background-music");
+const volumeSlider = document.getElementById("volume");
+const volumeNumber = document.getElementById("volume-number");
+const musicToggle = document.getElementById("music-toggle");
+const musicStatus = document.getElementById("music-status");
+
+audio.volume = Number(volumeSlider.value) / 100;
+
+volumeSlider.addEventListener("input", () => {
+  const value = Number(volumeSlider.value);
+  audio.volume = value / 100;
+  volumeNumber.textContent = value + "%";
+});
+
+musicToggle.addEventListener("click", async () => {
+  if (audio.paused) {
+    try {
+      await audio.play();
+      musicToggle.textContent = "Pause music Ⅱ";
+      musicStatus.textContent = "Playing 💜";
+    } catch (error) {
+      musicStatus.textContent = "Couldn't play the file. Check that song.mp3 is uploaded beside index.html.";
+    }
+  } else {
+    audio.pause();
+    musicToggle.textContent = "Play music ♫";
+    musicStatus.textContent = "Paused";
+  }
+});
+
+audio.addEventListener("ended", () => {
+  musicToggle.textContent = "Play music ♫";
+});
+</script>
+
+</body>
+</html>
